@@ -1,0 +1,20 @@
+[
+  {
+    "name": "IBM Verse Extensibility Sample Code",
+    "title": "IBM Verse Extensibility Sample Code",
+    "description": "The sample shows how to create templated link in Verse",
+    "extensions": [
+      {
+        "type": "com.ibm.appreg.ext.templatedLink",
+        "object": "com.ibm.appreg.object.person",
+        "payload": {
+          "text": "Open in OnTime!",
+          "href": "http://sample.com/redirect.html?open&user=\"${profile.primaryEmail}\""
+        }
+      }
+    ],
+    "services": [
+      "Verse"
+    ]
+  }
+]
